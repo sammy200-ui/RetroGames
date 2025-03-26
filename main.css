@@ -1,0 +1,102 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    color: white;
+    line-height: 1.6;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(90deg, red, cyan);
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+  }
+  
+  .navbar a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    color: cyan;
+    text-shadow: 0 0 5px red;
+  }
+  
+  .banner {
+    text-align: center;
+    padding: 50px;
+    background: url('retro-pattern.png') no-repeat center center/cover;
+  }
+  
+  .shop {
+    padding: 50px;
+    background: #1a1a1a;
+  }
+  
+  .shop .games {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .game-card {
+    background: #222;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .game-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px cyan;
+  }
+  
+  .about, .contact {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  .contact input, .contact textarea, .contact button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .contact button {
+    background: red;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .contact button:hover {
+    background: cyan;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 10px;
+    background: #111;
+  }
